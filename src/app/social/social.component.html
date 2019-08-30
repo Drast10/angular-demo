@@ -1,0 +1,15 @@
+<aside>
+
+  <!--Social Icons in Header-->
+  <ul class="social-icons">
+    <li *ngFor="let sociallinks of social">
+        <a target="{{sociallinks.target}}" title="{{sociallinks.title}}" href="{{sociallinks.link}}{{sociallinks.username}}">
+            <i class="fa fa-{{sociallinks.logo}} fa-1x"></i><span>{{sociallinks.title}}</span>
+        </a>
+    </li>
+    
+</ul>
+
+  <!--End of Social Icons in Header-->
+
+</aside>

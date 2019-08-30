@@ -1,0 +1,16 @@
+ <!--Blog area-->
+ <section id="blog" class="secondary-color text-center scrollto clearfix ">
+  <div class="row clearfix">
+
+      <div class="section-heading">
+          <h3>{{myblog.heading | uppercase}}</h3>
+          <h2 class="section-title">{{myblog.title | uppercase}}</h2>
+      </div>
+
+      <div *ngFor="let post of myblog.posts" class="post-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+        <app-post [post]="post"></app-post>
+      </div>
+
+    </div>
+</section>
+<!--End of Blog Area-->

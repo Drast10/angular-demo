@@ -1,0 +1,16 @@
+<!--post Block-->
+
+  <div class="post-block-content">
+      <h3>{{post.title}}</h3>
+      <p class="post-sub">By {{post.createdby}} | {{post.publishdate | date: 'dd-mm-yyyy'}}</p>
+      <div class="post">
+          <div class="post-featured-image ">
+            <img src="../../assets/images/gallery-images/{{post.image}}">
+      </div>
+      <ul>
+        {{post.summery}}
+      </ul>
+      <a routerLink="/article/{{post.id}}" class="button">READ MORE</a>
+  </div>
+
+<!--End post Block-->
